@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logonavbar from '../../../public/image/logoENIGMA.png'
+import logonavbar from '../../../public/image/logoParatennis.png'
 import Link from 'next/link'
 
 const NavBar = () => {
@@ -9,18 +9,15 @@ const NavBar = () => {
       style={{ position: 'fixed', width: '100%', top: 0, zIndex: 1000 }}
     >
       <div className='flex items-center flex-shrink-0 text-white mr-6'>
-        <svg
-          className='fill-current h-8 w-8 mr-2'
-          width='54'
-          height='54'
-          viewBox='0 0 54 54'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path d='../../../public/image/logoParatenn.png' />
-        </svg>
-        <Link href='/' className='font-semibold text-xl tracking-tight '>
-          ESA-Tennis
-        </Link>
+        <a href='/'>
+          <Image
+            className='fill-current h-10 w-20 mr-2 '
+            src={logonavbar}
+            alt='Logo'
+            width='54'
+            height='54'
+          />
+        </a>
       </div>
       <div className='block lg:hidden'>
         <button className='flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white'>
@@ -42,17 +39,23 @@ const NavBar = () => {
           >
             Le club
           </Link>
-          <a
-            href=''
+          <Link
+            href='/Entrainements'
             className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-zinc-950  mr-5'
           >
             Les cours
+          </Link>
+          <a
+            href=''
+            className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-zinc-950 mr-5'
+          >
+            Blog
           </a>
           <a
             href=''
             className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-zinc-950'
           >
-            Blog
+            Espoir
           </a>
         </div>
         <div>

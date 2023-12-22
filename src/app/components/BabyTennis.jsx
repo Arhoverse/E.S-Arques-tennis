@@ -8,19 +8,30 @@ import BackOfCard2 from './BackOfCard'
 const BabyTennis = () => {
   return (
     <>
-      <div
-        style={{ display: 'flex', flexDirection: 'row' }}
-        className='pt-12 pl-6'
-      >
-        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-20 ml-20 '>
+      <div className='flex flex-row pl-6'>
+        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-5 ml-20 '>
           <FrontOfCard />
           <BackOfCard />
         </div>
-        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-20 ml-20 '>
+        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-5 ml-20 '>
           <FrontOfCard2 />
-          <BackOfCard2 />
+          <BackOfCard />
         </div>
-        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-20 ml-20 '>
+        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-5 ml-20 '>
+          <FrontOfCard />
+          <BackOfCard />
+        </div>
+      </div>
+      <div className='flex flex-row pl-6'>
+        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-24 ml-20 '>
+          <FrontOfCard />
+          <BackOfCard />
+        </div>
+        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-24 ml-20 '>
+          <FrontOfCard />
+          <BackOfCard />
+        </div>
+        <div className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card mt-24 ml-20 mb-10'>
           <FrontOfCard />
           <BackOfCard />
         </div>
